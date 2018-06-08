@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        p {
+            color:gold;
+        }
+        body {
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .topnav {
+          overflow: hidden;
+          background-color: #333;
+        }
+        
+        .topnav a {
+          float: left;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+        }
+        
+        .topnav a:hover {
+          background-color: #ddd;
+          color: black;
+        }
+        
+        .topnav a.active {
+          background-color: #4CAF50;
+          color: white;
+        }
+        body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+        </style>
+        </head>
+        <body>
+        
+                <div class="topnav">
+                        <a href="index.html">Home</a>
+                        <a href="history.html">History</a>
+                        <a href="parts.html">Parts</a>
+                        <a href="songs.html">How to</a>
+                        <a href="funfacts.html">Fun Facts</a>
+                        <a href="quiz.html">Quiz</a>
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact us</a>
+        </div>
+        </body>
+        <body>
+
+                <h2 style="text-align:center">History of guitars</h2>
+                
+                
+                  <div class="mySlides">
+                   
+                    <img src="https://pbs.twimg.com/media/CNdSmDcWgAAjYxi.jpg" style="width:100%">
+                  </div>
+                
+                  <div class="mySlides">
+                   
+                    <img src="https://cdn8.openculture.com/2016/04/21171857/1931-frying-pan.jpg" style="width:100%">
+                  </div>
+                
+                  <div class="mySlides">
+                    
+                    <img src="https://fthmb.tqn.com/UMzJBIX1IigNssLUQcuKMd00Kew=/482x600/filters:fill(auto,1)/guitarloc-56b000685f9b58b7d01f54dd.jpg" style="width:100%">
+                  </div>
+                    
+                  <div class="mySlides">
+                   
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/McKinney_Valco_guitar_amp_%28c.1940s%29.jpg" style="width:100%">
+                  </div>
+                 
+                  <div class="mySlides">
+                    
+                        <img src="https://www.rnz.de/cms_media/module_img/505/252668_1_org_image_7703288742d33a3d.jpg" style="width:100%">
+                      </div>
+                      <div class="mySlides">
+                            
+                            <img src="https://sep.yimg.com/ay/stringsandbeyond/jim-dunlop-tortex-picks-4-for-1-14.gif" style="width:100%">
+                          </div>
+                         
+                    
+                  <a class="prev" onclick="plusSlides(-1)">❮</a>
+                  <a class="next" onclick="plusSlides(1)">❯</a>
+                
+                  <div class="caption-container">
+                    <p id="caption"></p>
+                  </div>
+                
+                  <div class="row">
+                    <div class="column">
+                      <img class="demo cursor" src="https://pbs.twimg.com/media/CNdSmDcWgAAjYxi.jpg" style="width:100%" onclick="currentSlide(1)" alt="The history of electric guitars from 1931-2008.">
+                    </div>
+                    <div class="column">
+                      <img class="demo cursor" src="https://cdn8.openculture.com/2016/04/21171857/1931-frying-pan.jpg" style="width:100%" onclick="currentSlide(2)" alt="This is one of the first electric guitars, made in 1931.">
+                    </div>
+                    <div class="column">
+                      <img class="demo cursor" src="https://fthmb.tqn.com/UMzJBIX1IigNssLUQcuKMd00Kew=/482x600/filters:fill(auto,1)/guitarloc-56b000685f9b58b7d01f54dd.jpg" style="width:100%" onclick="currentSlide(3)" alt="This is a picture of one of the early guitars, the guitar is 3500 years old.">
+                    </div>
+                    <div class="column">
+                      <img class="demo cursor" src="https://upload.wikimedia.org/wikipedia/commons/0/08/McKinney_Valco_guitar_amp_%28c.1940s%29.jpg" style="width:100%" onclick="currentSlide(4)" alt="This is a picture of an amplifier in the 1940s.">
+                    </div>
+                    <div class="column">
+                            <img class="demo cursor" src="https://www.rnz.de/cms_media/module_img/505/252668_1_org_image_7703288742d33a3d.jpg" style="width:100%" onclick="currentSlide(1)" alt="George Beauchamp was one of the first guitar creators.">
+                          </div>
+                    <div class="column">
+                            <img class="demo cursor" src="https://sep.yimg.com/ay/stringsandbeyond/jim-dunlop-tortex-picks-4-for-1-14.gif" style="width:100%" onclick="currentSlide(1)" alt="The first guitar pick was invented in 1922.">
+                              </div>
+                             
+                  </div>
+                </div>
+                
+                <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("demo");
+                  var captionText = document.getElementById("caption");
+                  if (n > slides.length) {slideIndex = 1}
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                      slides[i].style.display = "none";
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                      dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";
+                  dots[slideIndex-1].className += " active";
+                  captionText.innerHTML = dots[slideIndex-1].alt;
+                }
+                </script>
+                    
+                </body>
